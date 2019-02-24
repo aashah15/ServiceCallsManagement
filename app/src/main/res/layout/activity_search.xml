@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <TextView
+        android:id="@+id/text_view_list_equipment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"
+        android:text="Select Equipment"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/list_view_equipment"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_list_equipment"
+        android:layout_marginStart="5dp">
+    </ListView>
+
+    <TextView
+        android:id="@+id/text_view_list_model_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/text_view_list_equipment"
+        android:text="Select Model No."
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+    <ListView
+        android:id="@+id/list_view_model_no"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/list_view_equipment"
+        android:layout_below="@+id/text_view_list_model_no">
+    </ListView>
+    <TextView
+        android:id="@+id/text_view_list_issue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/text_view_list_model_no"
+        android:text="Select Issue"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+    <ListView
+        android:id="@+id/list_view_issue"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/list_view_model_no"
+        android:layout_below="@+id/text_view_list_issue">
+    </ListView>
+
+</RelativeLayout>
